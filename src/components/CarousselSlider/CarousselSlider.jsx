@@ -24,6 +24,7 @@ export function CarousselSlider({ items, delay }){
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{
           delay: delay,
           disableOnInteraction: false,

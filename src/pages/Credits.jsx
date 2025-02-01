@@ -1,6 +1,6 @@
 import { Box, Typography, Divider, Container } from "@mui/joy"
 import { CarousselSlider } from "../components/CarousselSlider/CarousselSlider";
-import { mainGroup } from "./../components/CarousselSlider/groupMembersInfo"
+import { mainGroup } from "../utils/groupMembersInfo"
 
 export function Credits(){
   return (
