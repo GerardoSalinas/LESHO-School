@@ -7,19 +7,25 @@ export function Credits(){
     <Container
       sx={{
         display: "flex",
+        flexDirection: 'column',
         width: "100vw",
-        height: "70vh",
-        alignItems: "flex-start",
+        height: "79vh",
+        justifyContent: 'space-evenly',
       }}
     >
       <Box sx={{ width: "100%", marginX: { sm: '1vw', lg: '5vw' }  }}>
-        <Typography variant="h6" component="h6" sx={{ color:'#1E1E1E' }}>
+        <Typography variant="h6" component="h6" sx={{ color:'#1E1E1E', fontSize: '1.3rem' }}>
           Equipo Principal
         </Typography>
         <Divider />
-
-        <CarousselSlider  items={mainGroup} />
-
+        <CarousselSlider  items={mainGroup} delay={3000} />
+      </Box>
+      <Box sx={{ width: "100%", marginX: { sm: '1vw', lg: '5vw' }  }}>
+        <Typography variant="h6" component="h6" sx={{ color:'#1E1E1E', fontSize: '1.3rem' }}>
+          Equipo Secundario 
+        </Typography>
+        <Divider />
+        <CarousselSlider  items={mainGroup} delay={3600} />
       </Box>
     </Container>
   );

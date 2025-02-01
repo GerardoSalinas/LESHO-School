@@ -9,6 +9,7 @@ export function NavBar(){
           width: "100vw",
           height: "10vh",
           position: "fixed",
+          boxSizing: 'border-box',
           top: "0px",
           left: "0px",
           filter: 'drop-shadow(rgba(0,0,0,0.25) 0px 4px 4px)'

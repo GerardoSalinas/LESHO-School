@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { useWindowSize } from "@uidotdev/usehooks";
 import "./styles.css"
 
-export function CarousselSlider({ items }){
+export function CarousselSlider({ items, delay }){
     const seconds = useState(new Date().getSeconds());
     const milis = useState(new Date().getMilliseconds());
     const size = useWindowSize();
@@ -25,7 +25,7 @@ export function CarousselSlider({ items }){
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: delay,
           disableOnInteraction: false,
         }}
         navigation={false}
